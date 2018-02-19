@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+<br>
+Index<br>
+--
+<p style="height:30px;"></p>
+
+{% for link in links.links %}
+<div class="card">
+    <div class="card-body">
+      {{link}}
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
